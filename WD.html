@@ -26,15 +26,6 @@ ul.tab li a {
 }
 
 
-ul.tab li a:hover {
-    color: gray;
-}
-
-
-ul.tab li a:focus, .active {
-    color: red;
-}
-
 
 .tabcontent {
 	color:white;
@@ -130,7 +121,14 @@ div.cover{
 		
 	}
 
+	a:hover {
+		color: gray;	
+	}
+	
 
+	a:focus, .active {
+		color: red;
+	}
 	
 	<!---test-->
 	
@@ -141,21 +139,22 @@ div.cover{
 	<div class="header"><!-- test -->
 	
 				<span><img id ="logo" src="LOGO.png" alt="onePlusStore"/></span>
+				<span><a href="#" class="tablinks" onclick="openTab(event, 'Home')">Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
 				<span><a href="#" class="tablinks" onclick="openTab(event, 'OnePlus3')">OnePlus3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
 				<span><a href="#" class="tablinks" onclick="openTab(event, 'OnePlus2')">OnePlus2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
 				<span><a href="#" class="tablinks" onclick="openTab(event, 'OnePlusX')">OnePlusX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
 				<span><a href="#" class="tablinks" onclick="openTab(event, 'OnePlus1')">OnePlus1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
-				<span><a href="#" class="tablinks" onclick="openTab(event, 'Support')">Support&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
 				<span><a href="#" class="tablinks" onclick="openTab(event, 'Community')">Community&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
-				<span><a href="#"><abbr title="Login"><img id ="login" src="login.png" alt="login"/></abbr></a></span>
-				<span><a href="#"><abbr title="Shop"><img id ="shop" src="SHOP.png" alt="ShoppingCart"/></abbr></a></span>
-				<span><a href="#"><abbr title="Indian Region"><img id ="Country" src="Country.jpg" alt="Country"/></abbr></a></span>
+				<span><a href="#" class="tablinks" onclick="openTab(event, 'Support')">Support&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+				<span><a href="#" class="tablinks" onclick="openTab(event, 'Login')"><abbr title="Login"><img id ="login" src="login.png" alt="login"/></abbr></a></span>
+				<span><a href="#" class="tablinks" onclick="openTab(event, 'Cart')"><abbr title="Shop"><img id ="shop" src="SHOP.png" alt="ShoppingCart"/></abbr></a></span>
+				<span><a href="#" class="tablinks" onclick="openTab(event, 'Region')"><abbr title="Indian Region"><img id ="Country" src="Country.jpg" alt="Country"/></abbr></a></span>
 				
 	</div>
 	
 
 		
-	<div id="ONP" class="tabcontent" style="display:block;" >
+	<div id="Home" class="tabcontent" style="display:block;" >
 	
 		<h3>This is Home Tab</h3>
 	</div>
@@ -207,7 +206,7 @@ div.cover{
 	</div>
 
 	<div id="Login" class="tabcontent">
-			<h3>This is Support</h3>
+			<h3>This is Login</h3>
 	</div>
 	
 	<div id="Cart" class="tabcontent">
